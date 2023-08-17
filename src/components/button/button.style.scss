@@ -1,0 +1,18 @@
+.btn-wrapper {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  font-weight: bold;
+
+  &.dark {
+    background-color: black;
+    color: white;
+  }
+
+  &.light {
+    background-color: transparent;
+    border: 1px solid black;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../index.scss';
+
+#projects {
+  min-height: 100vh;
+  padding-top: 70px;
+
+  .projects-list {
+    margin: 40px auto;
+    text-align: start;
+    max-width: 800px;
+
+    .project-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      align-items: center;
+      margin: 40px 0;
+      border: 1px solid black;
+
+      .project-preview {
+        flex: 0 0 40%;
+      }
+
+      .project-body {
+        padding: 20px;
+
+        p {
+          margin: 10px 0;
+          color: $text-gray;
+        }
+
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          div {
+            padding: 5px;
+            border: 1px solid gray;
+          }
+        }
+
+        .buttons {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}

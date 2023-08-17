@@ -1,0 +1,21 @@
+#skills {
+  min-height: 100vh;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .skills-list {
+    display: flex;
+    max-width: 600px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .skill-card {
+      padding: 10px;
+      flex: auto;
+      border: 1px solid black;
+    }
+  }
+}

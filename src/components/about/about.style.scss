@@ -1,0 +1,22 @@
+@import '../../index.scss';
+
+#about {
+  min-height: 100vh;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    color: $text-gray;
+    margin: 40px auto;
+    max-width: 600px;
+    line-height: 30px;
+    letter-spacing: 0.1rem;
+
+    span {
+      font-weight: bold;
+      color: black;
+    }
+  }
+}

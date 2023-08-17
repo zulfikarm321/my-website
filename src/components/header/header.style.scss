@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+#home {
+  min-height: 100vh;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.671);
+  }
+
+  .social-links {
+    margin: 30px 0;
+
+    a {
+      margin: 0 5px;
+    }
+  }
+
+  .header-text {
+    margin: 20px 0;
+
+    p {
+      color: $text-gray;
+      font-weight: 500;
+    }
+
+    h1 {
+      font-size: 40px;
+      letter-spacing: 0.1rem;
+    }
+
+    span {
+      letter-spacing: 0.1rem;
+      font-size: 22px;
+      font-weight: bold;
+      color: $text-gray;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@import '../../index.scss';
+
+nav {
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  position: fixed;
+  padding: 10px 20px 0;
+
+  .nav-container {
+    height: 40px;
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      // font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2vw;
+      font-weight: 600;
+      color: gray;
+
+      @media (max-width: 600px) {
+        display: none;
+      }
+
+      li a {
+        position: relative;
+        transition: all ease-in-out 0.3s;
+      }
+
+      li a::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 0%;
+        background-color: black;
+        height: 2px;
+        transition: all ease-in-out 0.3s;
+      }
+
+      li a:hover {
+        color: black;
+      }
+
+      li a:hover::after {
+        width: 100%;
+      }
+
+      li a.active {
+        color: black;
+      }
+
+      li a.active::after {
+        width: 100%;
+        color: black;
+      }
+    }
+
+    .menu-icon {
+      display: none;
+
+      @media (max-width: 600px) {
+        display: block;
+      }
+    }
+  }
+
+  .nav-dropdown {
+    // border: 1px solid black;
+    padding: 20px;
+    text-align: end;
+    position: absolute;
+    z-index: -2;
+    top: -100vh;
+    right: 0;
+    background-color: white;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .nav-dropdown.active {
+    border: 1px solid black;
+    padding: 20px;
+    position: absolute;
+    z-index: -2;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    gap: 20px;
+
+    display: none;
+
+    @media (max-width: 600px) {
+      display: flex;
+    }
+
+    li a {
+      position: relative;
+      transition: all ease-in-out 0.3s;
+    }
+
+    li a::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 0%;
+      background-color: black;
+      height: 2px;
+      transition: all ease-in-out 0.3s;
+    }
+
+    li a:hover {
+      color: black;
+    }
+
+    li a:hover::after {
+      width: 100%;
+    }
+
+    li a.active {
+      color: black;
+    }
+
+    li a.active::after {
+      width: 100%;
+      color: black;
+    }
+  }
+}
