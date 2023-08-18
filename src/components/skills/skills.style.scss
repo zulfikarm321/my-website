@@ -16,6 +16,13 @@
       padding: 10px;
       flex: auto;
       border: 1px solid black;
+      cursor: crosshair;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        transition: all ease-in-out 0.1s;
+      }
     }
   }
 }

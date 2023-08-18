@@ -19,13 +19,21 @@
 
       .project-preview {
         flex: 0 0 40%;
+
+        img {
+          object-fit: cover;
+        }
+
+        @media (max-width: 780px) {
+          display: none;
+        }
       }
 
       .project-body {
         padding: 20px;
 
         p {
-          margin: 10px 0;
+          margin: 20px 0;
           color: $text-gray;
         }
 
@@ -35,7 +43,12 @@
           gap: 10px;
 
           div {
-            padding: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 5px 7px;
+            background-color: black;
+            color: white;
             border: 1px solid gray;
           }
         }

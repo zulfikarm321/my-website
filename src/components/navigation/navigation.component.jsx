@@ -7,32 +7,6 @@ function Navigation() {
   const [currentHash, setCurrentHash] = useState('#home');
   const [showMenu, setShowMenu] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-
-      let newHash = '#home';
-      for (const link of links) {
-        const targetElement = document.querySelector(link.hash);
-        if (targetElement) {
-          const elementTop =
-            targetElement.getBoundingClientRect().top + window.scrollY;
-          if (elementTop <= scrollPosition + 1) {
-            newHash = link.hash;
-          }
-        }
-      }
-
-      setCurrentHash(newHash);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   const handlerCurrentHash = (hash) => {
     setCurrentHash(hash);
   };

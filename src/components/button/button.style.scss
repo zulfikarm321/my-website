@@ -3,16 +3,29 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  border: none;
+  border: transparent;
   font-weight: bold;
+  cursor: pointer;
 
   &.dark {
     background-color: black;
     color: white;
+    border: 1px solid black;
+    transition: all ease-in-out 0.1s;
+
+    &:hover {
+      background-color: transparent;
+      color: black;
+    }
   }
 
   &.light {
     background-color: transparent;
     border: 1px solid black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
   }
 }
