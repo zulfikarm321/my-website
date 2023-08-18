@@ -45,7 +45,7 @@ export const projects = [
     desc: 'This project is a fun collaboration with Scrimba and Kevin Powell! If you like, you can follow along and watch Kevin complete the project on Scrimba. Lots to learn!',
     preview:
       'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/x8skdsukkmwiwxejthio.jpg',
-    tags: ['ReactJS', 'React-router', 'scss'],
+    tags: ['ReactJS', 'scss'],
     siteLink: 'https://space-tourism-web-nu.vercel.app/',
     github: 'https://github.com/zulfikarm321/space-tourism-web'
   },

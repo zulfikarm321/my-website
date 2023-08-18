@@ -14,14 +14,13 @@ function Projects(props) {
               <img src={project.preview} alt="project preview image" />
             </div>
             <div className="project-body">
-              {/* <div className="tags">
-                {project.tags.map((tag) => (
-                  <div>{tag}</div>
-                ))}
-              </div> */}
               <h3>{project.title}</h3>
               <p>{project.desc}</p>
-
+              <div className="tags">
+                {project.tags.map((tag) => (
+                  <div key={tag}>{tag}</div>
+                ))}
+              </div>
               <div className="buttons">
                 <a href={project.github} target="_blank">
                   <Button buttonType="dark">
