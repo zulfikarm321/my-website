@@ -15,7 +15,6 @@ nav {
     height: 40px;
     margin: auto 0;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
@@ -29,28 +28,29 @@ nav {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 2vw;
       font-weight: 600;
       color: gray;
 
-      @media (max-width: 600px) {
+      @media (max-width: 500px) {
         display: none;
       }
 
       li a {
         position: relative;
-        transition: all ease-in-out 0.3s;
+        transition: width ease-in-out 0.3s;
+        margin-left: 2vw;
       }
 
       li a::after {
         content: '';
         position: absolute;
-        bottom: -15px;
+        bottom: -20px;
         left: 0;
         width: 0%;
         background-color: black;
-        height: 2px;
-        transition: all ease-in-out 0.3s;
+        height: 3px;
+        border-radius: 2px;
+        transition: width ease-in-out 0.3s;
       }
 
       li a:hover {
@@ -74,7 +74,7 @@ nav {
     .menu-icon {
       display: none;
 
-      @media (max-width: 600px) {
+      @media (max-width: 500px) {
         display: block;
       }
     }
@@ -100,12 +100,14 @@ nav {
     right: 20px;
     background-color: white;
     flex-direction: column;
-    gap: 20px;
-
     display: none;
 
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       display: flex;
+    }
+
+    li {
+      margin-bottom: 20px;
     }
 
     li a {

@@ -3,11 +3,7 @@ import './about.style.scss';
 function About(props) {
   return (
     <div id="about">
-      <main
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-      >
+      <main data-aos="fade-right">
         <span>Let you know</span>
         <h1>About Me</h1>
 

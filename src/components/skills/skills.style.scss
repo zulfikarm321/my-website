@@ -7,22 +7,9 @@
 
   .skills-list {
     display: flex;
+    justify-content: center;
     max-width: 600px;
     margin: 40px auto;
     flex-wrap: wrap;
-    gap: 10px;
-
-    .skill-card {
-      padding: 10px;
-      flex: auto;
-      border: 1px solid black;
-      cursor: crosshair;
-
-      &:hover {
-        background-color: black;
-        color: white;
-        transition: all ease-in-out 0.1s;
-      }
-    }
   }
 }
