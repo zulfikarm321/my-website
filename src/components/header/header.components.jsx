@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaDribbble, FaInstagram } from 'react-icons/fa';
 
 function Header(props) {
   return (
-    <div id="home">
+    <div id="home" data-aos="fade-up" data-aos-duration="2000">
       <main>
         <div className="avatar">
           <img src={Avatar} alt="avatar image" />

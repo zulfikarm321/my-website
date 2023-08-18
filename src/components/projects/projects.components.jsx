@@ -9,7 +9,7 @@ function Projects(props) {
       <h1>My Projects</h1>
       <div className="projects-list">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
+          <div key={index} className="project-card" data-aos="flip-right">
             <div className="project-preview">
               <img src={project.preview} alt="project preview image" />
             </div>

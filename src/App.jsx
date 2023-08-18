@@ -6,8 +6,17 @@ import Projects from './components/projects/projects.components';
 import Header from './components/header/header.components';
 import Skills from './components/skills/skills.components';
 import Experience from './components/experience/experience.components';
+import Contact from './components/contact/contact.components';
+
+import { useEffect } from 'react';
+import 'aos/dist/aos.css'; // Import styles
+import AOS from 'aos'; // Import AOS library
 
 function App() {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS when component mounts
+  }, []);
+
   return (
     <div className="app">
       <Navigation />
@@ -16,6 +25,7 @@ function App() {
       <Skills />
       <Projects />
       <Experience />
+      <Contact />
     </div>
   );
 }
