@@ -5,7 +5,7 @@ import Button from '../button/button.component';
 
 function Projects(props) {
   return (
-    <div id="projects">
+    <section id="projects">
       <h1>My Projects</h1>
       <div className="projects-list">
         {projects.map((project, index) => (
@@ -39,7 +39,7 @@ function Projects(props) {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

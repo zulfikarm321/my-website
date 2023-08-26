@@ -2,7 +2,7 @@
 
 #projects {
   min-height: 100vh;
-  padding-top: 70px;
+  padding: 70px 20px;
 
   .projects-list {
     margin: 20px auto;
@@ -20,7 +20,11 @@
       margin: 20px 0;
       border: 1px solid rgba(167, 167, 167, 0.144);
       box-shadow: 0px 5px 10px rgba(167, 167, 167, 0.144);
-      border-radius: 10px;
+      border-radius: 20px;
+
+      @media (max-width: 450px) {
+        padding: 10px;
+      }
 
       .project-preview {
         flex: 0 0 55%;

@@ -17,7 +17,7 @@ $text-gray: rgb(78, 78, 78);
 
 body {
   text-align: center;
-  padding: 0 20px;
+  // padding: 0 20px;
 }
 
 a {
@@ -33,4 +33,18 @@ li {
 img {
   max-width: 100%;
   height: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: black;
+  outline: 1px solid slategrey;
 }

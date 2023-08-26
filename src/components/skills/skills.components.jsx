@@ -10,66 +10,73 @@ import {
   FaJs,
   FaGit
 } from 'react-icons/fa';
-import { SiExpress } from 'react-icons/si';
+import {
+  SiExpress,
+  SiNuxtdotjs,
+  SiTailwindcss,
+  SiNextdotjs
+} from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
-import { SiTailwindcss } from 'react-icons/si';
+import {} from 'react-icons/si';
 
 import IconWrapper from '../iconwrapper/iconwrapper.component';
 
 function Skills(props) {
   return (
-    <div id="skills">
+    <section id="skills">
       <main>
         <h1>My Skills</h1>
         <div className="skills-list">
           <IconWrapper>
             <FaHtml5 size={'3em'} style={{ color: '#eb8934' }} />
+            <span>HTML</span>
           </IconWrapper>
           <IconWrapper>
-            <FaCss3 size={'3em'} style={{ color: 'blue' }} />
+            <FaCss3 size={'3em'} style={{ color: 'blue' }} /> <span>CSS</span>
           </IconWrapper>
           <IconWrapper>
             <FaSass size={'3em'} style={{ color: '#eb3483' }} />
+            <span>SASS</span>
           </IconWrapper>
           <IconWrapper>
             <SiTailwindcss size={'3em'} style={{ color: '#34e8eb' }} />
+            <span>TAIILWIND</span>
           </IconWrapper>
-
           <IconWrapper>
             <FaNodeJs size={'3em'} style={{ color: '#34eb49' }} />
+            <span>NODEJS</span>
+          </IconWrapper>{' '}
+          <IconWrapper>
+            <SiExpress size={'3em'} style={{ color: '#34eb6b' }} />
+            <span>EXPRESS</span>
           </IconWrapper>
           <IconWrapper>
             <FaReact size={'3em'} style={{ color: '#34b1eb' }} />
+            <span>REACT</span>
+          </IconWrapper>
+          <IconWrapper>
+            <SiNextdotjs size={'3em'} style={{ color: '#34b1eb' }} />
+            <span>NEXT</span>
           </IconWrapper>
           <IconWrapper>
             <FaVuejs size={'3em'} style={{ color: '#34eb8f' }} />
+            <span>VUE</span>
           </IconWrapper>
           <IconWrapper>
-            <SiExpress size={'3em'} style={{ color: '#34eb6b' }} />
+            <SiNuxtdotjs size={'3em'} style={{ color: '#34eb8f' }} />
+            <span>NUXT</span>
           </IconWrapper>
           <IconWrapper>
             <GrMysql size={'3em'} style={{ color: '#34b1eb' }} />
+            <span>MYSQL</span>
           </IconWrapper>
           <IconWrapper>
             <FaGit size={'3em'} style={{ color: '#eb8f34' }} />
+            <span>GIT</span>
           </IconWrapper>
         </div>
-
-        {/* <div className="skills-list">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="skill-card"
-              data-aos="fade-right"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-            >
-              {skill}
-            </div>
-          ))}
-        </div> */}
       </main>
-    </div>
+    </section>
   );
 }
 
